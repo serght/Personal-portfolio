@@ -38,7 +38,7 @@ const projects = [
     image: ReactImg,
     fullDesc: 'This personal website offers a light/dark theme with preference persistence and fluid navigation with animated menus and smooth scrolling. It includes a project page with interactive cards (hover, entrance effects), expandable sections with automatic scrolling, and technology badges, all with responsive design (mobile/desktop) and fluid animations. The homepage features interactive artwork and calls to action.',
     technologies: ['React+vite', 'html/css/tailwind', 'Framer Motion'],
-    githubUrl: 'https://github.com/tu-usuario/mysite-repo'
+    githubUrl: 'https://github.com/serght/Personal-portfolio'
   }
 ];
 
