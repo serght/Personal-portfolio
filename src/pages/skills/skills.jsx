@@ -2,6 +2,18 @@ import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import Navbar from "../../components/Navbar";
 
+// Importar todas las imágenes
+import ReactIcon from "../../assets/images/skills/React.png";
+import JavaScriptIcon from "../../assets/images/skills/JavaScript.webp";
+import PythonIcon from "../../assets/images/skills/Python.png";
+import CppIcon from "../../assets/images/skills/Clogo.png";
+import DatabaseIcon from "../../assets/images/skills/sql.png";
+import JavaIcon from "../../assets/images/skills/java.png";
+import KotlinIcon from "../../assets/images/skills/kotlin.png";
+import GitHubIcon from "../../assets/images/skills/github.png";
+import DockerIcon from "../../assets/images/skills/docker.webp";
+import AWSIcon from "../../assets/images/skills/aws.webp";
+
 const Skills = () => {
   const { isDayMode } = useTheme();
 
@@ -44,13 +56,13 @@ const Skills = () => {
   ];
 
   const technologies = [
-    { name: "React", icon: "src/assets/images/skills/React.png" },
-    { name: "JavaScript", icon: "src/assets/images/skills/JavaScript.webp" },
-    { name: "Python", icon: "src/assets/images/skills/Python.png" },
-    { name: "c++", icon: "src/assets/images/skills/Clogo.png" },
-    { name: "Database", icon: "src/assets/images/skills/sql.png" },
-    { name: "java", icon: "src/assets/images/skills/java.png" },
-    { name: "Kotlin", icon: "src/assets/images/skills/kotlin.png" },
+    { name: "React", icon: ReactIcon },
+    { name: "JavaScript", icon: JavaScriptIcon },
+    { name: "Python", icon: PythonIcon },
+    { name: "c++", icon: CppIcon },
+    { name: "Database", icon: DatabaseIcon },
+    { name: "java", icon: JavaIcon },
+    { name: "Kotlin", icon: KotlinIcon },
   ];
 
   return (
@@ -180,7 +192,7 @@ const Skills = () => {
           <div className="flex justify-center items-center space-x-8">
             <div className="flex items-center space-x-2">
               <img
-                src="src/assets/images/skills/github.png"
+                src={GitHubIcon}
                 alt="GitHub"
                 className="w-6 h-6 object-contain"
               />
@@ -195,8 +207,8 @@ const Skills = () => {
 
             <div className="flex items-center space-x-2">
               <img
-                src="src/assets/images/skills/docker.webp"
-                alt="Tailwind"
+                src={DockerIcon}
+                alt="Docker"
                 className="w-6 h-6 object-contain"
               />
               <span
@@ -210,8 +222,8 @@ const Skills = () => {
 
             <div className="flex items-center space-x-2">
               <img
-                src="src/assets/images/skills/aws.webp"
-                alt="Vite"
+                src={AWSIcon}
+                alt="AWS"
                 className="w-6 h-6 object-contain"
               />
               <span
