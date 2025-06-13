@@ -36,7 +36,6 @@ This is a responsive personal portfolio website built using **React** and **Vite
 If you are curious about how this website is built or want to explore the code, feel free to clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/serght/Personal-portfolio
 npm install
 npm run dev
