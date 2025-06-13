@@ -8,7 +8,7 @@ import JavaScriptIcon from "../../assets/images/skills/JavaScript.webp";
 import PythonIcon from "../../assets/images/skills/Python.png";
 import CppIcon from "../../assets/images/skills/Clogo.png";
 import DatabaseIcon from "../../assets/images/skills/sql.png";
-import JavaIcon from "../../assets/images/skills/java.png";
+import JavaIcon from "../../assets/images/skills/Java.png";
 import KotlinIcon from "../../assets/images/skills/kotlin.png";
 import GitHubIcon from "../../assets/images/skills/github.png";
 import DockerIcon from "../../assets/images/skills/docker.webp";
