@@ -50,7 +50,7 @@
     "mobile": "Mobile Development",
     "uiux": "UI/UX Design"
   },
-  
+
   "hero": {
     "title": "I enjoy building challenging projects that help me grow as a developer and a person.",
     "subtitle": "Behind every project: a story of growth. Dive in!",
@@ -72,6 +72,11 @@
       "full": "This personal website offers a light/dark theme with preference persistence and fluid navigation with animated menus and smooth scrolling. It includes a project page with interactive cards, expandable sections, and responsive design. The homepage features interactive artwork and calls to action."
     },
     "tech": "Technologies used:"
+  },
+  "navbar": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "hobbies": "Hobbies",
+    "contact": "Contact"
   }
-
 }

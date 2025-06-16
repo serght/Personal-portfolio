@@ -51,13 +51,12 @@
     "uiux": "Diseño UI/UX"
   },
 
-  
   "hero": {
     "title": "Disfruto construir proyectos desafiantes que me ayudan a crecer como desarrollador y persona.",
     "subtitle": "Detrás de cada proyecto: una historia de crecimiento. ¡Sumérgete!",
     "viewWork": "Ver mis trabajos",
     "getInTouch": "Contáctame"
-    },
+  },
   "projects": {
     "title": "Mis Proyectos",
     "octsense": {
@@ -73,6 +72,12 @@
       "full": "Este portafolio personal incluye tema claro/oscuro, menús animados, secciones expansibles y navegación fluida. Presenta tarjetas interactivas con tecnología moderna, animaciones y diseño responsivo. La página principal incluye ilustraciones interactivas y llamadas a la acción."
     },
     "tech": "Tecnologías usadas:"
-     }
-  
+  },
+
+  "navbar": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "hobbies": "Pasatiempos",
+    "contact": "Contacto"
+  }
 }

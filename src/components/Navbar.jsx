@@ -7,11 +7,18 @@ import { useTranslation } from "react-i18next";
 export default function Navbar() {
   const { isDayMode, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
   const changeLanguage = (e) => i18n.changeLanguage(e.target.value);
+
+  const navLinks = [
+    { path: "/projects", label: t("navbar.projects") },
+    { path: "/skills", label: t("navbar.skills") },
+    { path: "/hobbies", label: t("navbar.hobbies") },
+    { path: "/contact", label: t("navbar.contact") },
+  ];
 
   return (
     <nav className="relative">
@@ -32,21 +39,22 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
           <div className="flex space-x-4 lg:space-x-6">
-            {["projects", "skills", "hobbies", "contact"].map((item) => (
+            {navLinks.map((link) => (
               <Link
-                key={item}
-                to={`/${item}`}
+                key={link.path}
+                to={link.path}
                 className={`text-lg lg:text-xl font-medium transition-all hover:scale-105 ${
                   isDayMode
                     ? "text-[#354F52] hover:text-[#2F3E46]"
                     : "text-[#84A98C] hover:text-[#CAD2C5]"
                 }`}
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
+                {link.label}
               </Link>
             ))}
           </div>
 
+          {/* Theme toggle */}
           <button
             onClick={toggleTheme}
             className={`p-2 rounded-full transition-all ${
@@ -111,10 +119,10 @@ export default function Navbar() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="pt-20 px-6 flex flex-col space-y-6">
-              {["projects", "skills", "hobbies", "contact"].map((item) => (
+              {navLinks.map((link) => (
                 <Link
-                  key={item}
-                  to={`/${item}`}
+                  key={link.path}
+                  to={link.path}
                   onClick={closeMenu}
                   className={`text-lg font-medium transition-all hover:scale-105 ${
                     isDayMode
@@ -122,7 +130,7 @@ export default function Navbar() {
                       : "text-[#84A98C] hover:text-[#CAD2C5]"
                   }`}
                 >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  {link.label}
                 </Link>
               ))}
 
