@@ -1,0 +1,78 @@
+{
+  "contact": {
+    "title": "Ponte en contacto",
+    "instagram": "Instagram",
+    "instagramDesc": "Sigue mi camino",
+    "github": "GitHub",
+    "githubDesc": "Mira mi código",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "Conecta profesionalmente",
+    "clickToConnect": "Haz clic para conectar →"
+  },
+  "hobbies": {
+    "header": "Los que me conocen saben que...",
+    "subheader": "Más allá del código, me apasionan varias actividades que me ayudan a mantener el equilibrio, la creatividad y la motivación en mi vida diaria.",
+    "tip": "Haz clic en cualquier tarjeta para ver la magia",
+    "passion": "Nivel de pasión",
+    "celebrate": "Haz clic para celebrar esta pasión",
+    "share": "¿Compartes alguna de estas pasiones?",
+    "gaming": {
+      "title": "Videojuegos",
+      "desc": "Apasionado por los juegos estratégicos y deportivos. Me encanta explorar nuevos mundos y competir en aventuras multijugador."
+    },
+    "draw": {
+      "title": "Dibujo",
+      "desc": "Dibujo personajes animados, paisajes y cualquier cosa que quiera expresar en un dibujo."
+    },
+    "cooking": {
+      "title": "Cocinar",
+      "desc": "Experimentando con sabores del mundo. Me gusta crear nuevas recetas y compartir comidas con amigos."
+    },
+    "travel": {
+      "title": "Viajar",
+      "desc": "Me gusta conocer nuevos lugares, que sean históricos, hermosos o simplemente donde pueda conectar con el ambiente."
+    },
+    "sports": {
+      "title": "Deportes",
+      "desc": "Me gusta especialmente el fútbol, pero también me gusta jugar baloncesto y tenis. También disfruto la Fórmula 1 y en general cualquier deporte competitivo."
+    }
+  },
+  "skills": {
+    "title": "Mi perfil profesional",
+    "subtitle1": "Habilidades y experiencia",
+    "subtitle2": "y logros",
+    "description": "Desarrollador apasionado con experiencia en tecnologías modernas y metodologías ágiles, enfocado en soluciones innovadoras y trabajo colaborativo.",
+    "webDevelopment": "Desarrollo Web",
+    "database": "Base de Datos",
+    "ai": "Inteligencia Artificial",
+    "teamwork": "Trabajo en Equipo",
+    "scrum": "Metodologías Scrum",
+    "mobile": "Desarrollo Móvil",
+    "uiux": "Diseño UI/UX"
+  },
+
+  
+  "hero": {
+    "title": "Disfruto construir proyectos desafiantes que me ayudan a crecer como desarrollador y persona.",
+    "subtitle": "Detrás de cada proyecto: una historia de crecimiento. ¡Sumérgete!",
+    "viewWork": "Ver mis trabajos",
+    "getInTouch": "Contáctame"
+    },
+  "projects": {
+    "title": "Mis Proyectos",
+    "octsense": {
+      "short": "Sistema web para detección automática en imágenes OCT",
+      "full": "OCTsense es un sistema web diseñado para analizar automáticamente imágenes de tomografía de coherencia óptica (OCT) usando técnicas de aprendizaje profundo. Su objetivo es mejorar el acceso a diagnósticos oftalmológicos en regiones con escasez de especialistas. Clasifica imágenes en cuatro condiciones clínicas comunes y entrega resultados rápidos y comprensibles."
+    },
+    "bank": {
+      "short": "Servicio bancario para aplicación retail",
+      "full": "Este servicio procesa el flujo de una transacción de pago en un punto de venta (POS). Inicia cuando un cliente realiza una compra y presenta su tarjeta, la cual es validada por el sistema del banco. Si hay fondos, se autoriza la transacción, se imprime el recibo y se completa el proceso."
+    },
+    "site": {
+      "short": "Descubre cómo se hizo esta página web",
+      "full": "Este portafolio personal incluye tema claro/oscuro, menús animados, secciones expansibles y navegación fluida. Presenta tarjetas interactivas con tecnología moderna, animaciones y diseño responsivo. La página principal incluye ilustraciones interactivas y llamadas a la acción."
+    },
+    "tech": "Tecnologías usadas:"
+     }
+  
+}

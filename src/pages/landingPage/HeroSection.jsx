@@ -1,21 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Sun, Moon } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import { useTheme } from "../../context/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
-  const { isDayMode, toggleTheme } = useTheme();
+  const { isDayMode } = useTheme();
+  const { t } = useTranslation();
 
   return (
-    <div
-      className={`min-h-screen transition-all duration-500 ${
-        isDayMode ? "bg-white" : "bg-gray-900"
-      }`}
-    >
+    <div className={`min-h-screen transition-all duration-500 ${isDayMode ? "bg-white" : "bg-gray-900"}`}>
       <Navbar />
-
-      <div className="flex flex-col lg:flex-row min-h-[calc(100vh-120px)]">
+         <div className="flex flex-col lg:flex-row min-h-[calc(100vh-120px)]">
         <div
           className={`lg:w-1/2 flex items-center justify-center p-8 transition-colors duration-500 ${
             isDayMode ? "bg-gray-900" : "bg-gray-800"
@@ -368,22 +365,16 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div
-          className={`lg:w-1/2 flex items-center justify-center p-8 lg:p-16 transition-all duration-500 ${
-            isDayMode
-              ? "bg-gradient-to-br from-purple-500 to-pink-500"
-              : "bg-gradient-to-br from-purple-800 to-indigo-800"
-          }`}
-        >
+        {/* Context */}
+        <div className={`lg:w-1/2 flex items-center justify-center p-8 lg:p-16 transition-all duration-500 ${isDayMode ? "bg-gradient-to-br from-purple-500 to-pink-500" : "bg-gradient-to-br from-purple-800 to-indigo-800"}`}>
           <div className="max-w-lg">
             <div className="space-y-8">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                I enjoy building challenging projects that help me grow as a
-                developer and a person.
+                {t("hero.title")}
               </h1>
 
               <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                Behind every project: a story of growth. Dive in!
+                {t("hero.subtitle")}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -391,13 +382,13 @@ export default function HeroSection() {
                   to="/projects"
                   className="px-6 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-center"
                 >
-                  View My Work
+                  {t("hero.viewWork")}
                 </Link>
                 <Link
                   to="/contact"
                   className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-purple-600 transition-colors text-center"
                 >
-                  Get In Touch
+                  {t("hero.getInTouch")}
                 </Link>
               </div>
             </div>

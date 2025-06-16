@@ -1,0 +1,77 @@
+{
+  "contact": {
+    "title": "Let's get in touch",
+    "instagram": "Instagram",
+    "instagramDesc": "Follow my journey",
+    "github": "GitHub",
+    "githubDesc": "Check out my code",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "Connect professionally",
+    "clickToConnect": "Click to connect →"
+  },
+  "hobbies": {
+    "header": "Those who know me know that...",
+    "subheader": "Beyond coding, I'm passionate about various activities that help me maintain balance, creativity and motivation in my daily life.",
+    "tip": "Click on any card to see the magic",
+    "passion": "Passion Level",
+    "celebrate": "Click to celebrate this passion",
+    "share": "Do you share any of these passions?",
+    "gaming": {
+      "title": "Gaming",
+      "desc": "Passionate about strategic games and sports. Love exploring new worlds and competing in multiplayer adventures."
+    },
+    "draw": {
+      "title": "Draw",
+      "desc": "Draw animated characters, landscapes and anything I feel I want to express in a drawing."
+    },
+    "cooking": {
+      "title": "Cooking",
+      "desc": "Experimenting with flavors from around the world. Love creating new recipes and sharing meals with friends."
+    },
+    "travel": {
+      "title": "Travel",
+      "desc": "I like to know new places, that are historical, beautiful or simply that one can connect with the place."
+    },
+    "sports": {
+      "title": "Sports",
+      "desc": "I especially like football but I also like to play basketball and tennis. I also like Formula 1 and in general any sport that has to do with competition."
+    }
+  },
+  "skills": {
+    "title": "My Professional",
+    "subtitle1": "Background Skills and",
+    "subtitle2": "Accomplishments",
+    "description": "Passionate developer with expertise in modern technologies and methodologies, focused on creating innovative solutions and collaborative teamwork.",
+    "webDevelopment": "Web Development",
+    "database": "Database",
+    "ai": "Artificial Intelligence",
+    "teamwork": "Team Work",
+    "scrum": "Scrum Methodologies",
+    "mobile": "Mobile Development",
+    "uiux": "UI/UX Design"
+  },
+  
+  "hero": {
+    "title": "I enjoy building challenging projects that help me grow as a developer and a person.",
+    "subtitle": "Behind every project: a story of growth. Dive in!",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "projects": {
+    "title": "My Projects",
+    "octsense": {
+      "short": "Web system for automatic detection in oct images",
+      "full": "OCTsense is a web-based system designed to automatically analyze optical coherence tomography (OCT) images using deep learning techniques. Its goal is to improve access to ophthalmologic diagnoses in regions with a shortage of specialists and technology. The tool classifies images into four common clinical conditions, providing fast and understandable results."
+    },
+    "bank": {
+      "short": "Banking service for a retail application",
+      "full": "The service processes the flow of a payment transaction at a point of sale (POS) within a banking or retail environment. It begins when a customer makes a purchase and presents their card at the POS, which sends the request to the retailer's payment system. This system contacts the bank, which validates whether there are available funds. If successful, the payment is confirmed and the funds are transferred."
+    },
+    "site": {
+      "short": "know how the website you are on was made",
+      "full": "This personal website offers a light/dark theme with preference persistence and fluid navigation with animated menus and smooth scrolling. It includes a project page with interactive cards, expandable sections, and responsive design. The homepage features interactive artwork and calls to action."
+    },
+    "tech": "Technologies used:"
+  }
+
+}
