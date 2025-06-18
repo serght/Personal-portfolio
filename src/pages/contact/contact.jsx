@@ -210,7 +210,7 @@ const Contact = () => {
                   : "text-[#E2E8F0] group-hover:text-[#60A5FA]"
               }`}
             >
-              <span className="font-semibold">Email:</span> xsergys@gmail.com
+              <span className="font-semibold">Email:</span> xsergysht@gmail.com
               <svg
                 className="inline-block w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1"
                 fill="none"
