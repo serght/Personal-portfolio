@@ -47,9 +47,65 @@ const Hobbies = () => {
     },
   ];
 
-  const createConfetti = (icon, event) => {};
-  useEffect(() => {}, [confetti]);
-  const handleCardClick = (hobby, event) => { createConfetti(hobby.icon, event); };
+  const createConfetti = (icon, event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    const newConfetti = [];
+
+    for (let i = 0; i < 15; i++) {
+      const id = Math.random();
+      const angle = (Math.PI * 2 * i) / 15;
+      const velocity = 3 + Math.random() * 4;
+
+      newConfetti.push({
+        id,
+        icon,
+        x: centerX,
+        y: centerY,
+        initialX: centerX,
+        initialY: centerY,
+        vx: Math.cos(angle) * velocity,
+        vy: Math.sin(angle) * velocity,
+        rotation: 0,
+        rotationSpeed: (Math.random() - 0.5) * 20,
+        scale: 0.8 + Math.random() * 0.4,
+        opacity: 1,
+        life: 0,
+      });
+    }
+
+    setConfetti((prev) => [...prev, ...newConfetti]);
+  };
+
+  useEffect(() => {
+    if (confetti.length === 0) return;
+
+    const interval = setInterval(() => {
+      setConfetti((prev) => {
+        return prev
+          .map((particle) => ({
+            ...particle,
+            x: particle.x + particle.vx,
+            y: particle.y + particle.vy,
+            vy: particle.vy + 0.3,
+            vx: particle.vx * 0.99,
+            rotation: particle.rotation + particle.rotationSpeed,
+            life: particle.life + 1,
+            opacity: Math.max(0, 1 - particle.life / 60),
+            scale: particle.scale * 0.98,
+          }))
+          .filter((particle) => particle.life < 60 && particle.opacity > 0);
+      });
+    }, 16);
+
+    return () => clearInterval(interval);
+  }, [confetti]);
+
+  const handleCardClick = (hobby, event) => {
+    createConfetti(hobby.icon, event);
+  };
 
   return (
     <div className={`min-h-screen transition-all duration-300 relative overflow-hidden ${isDayMode ? "bg-gradient-to-br from-[#F8FAFC] to-[#F1F5F9]" : "bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#334155]"}`}>
